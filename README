@@ -1,0 +1,20 @@
+To run train.py:
+python train.py
+
+Make sure to make two directories at the same level as train.py  : ./trainImages and ./testImages
+Fill those directories with the amount of images required (200-300 for testing. For training, you can adjust the size in multiples of 200)
+
+_____________________________
+
+To run predict.py:
+python predict.py ./predictImages/4.jpg ./predictImages/5.jpg 
+
+For the images to predict, you can specify any file paths. I made a directory called predictImages but it isn't necessary.
+
+_____________________________
+
+To run imageDownloader.py:
+python imageDownloader.py movie-genre-from-its-poster/MovieGenre.csv
+
+The argument is the path to the IMDB csv file. 
+As the same level as imageDownloader.py, create an ./images directory to store the downloaded images in (or change it to whatever directory name you want in the code)
